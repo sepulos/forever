@@ -1,0 +1,63 @@
+.gallery
+  position: relative
+  +clearfix
+  background: $yellow
+  text-align: center
+  margin: 20px 0
+
+  &__title
+    text-align: center
+
+  &__boxItem
+    height: auto
+    padding: 20px
+
+    &:hover
+      opacity: 0.6
+
+  &__boxImg
+    width: 100%
+    height: auto
+
+  &__area
+    width: 100%
+    height: 30px
+
+  &__btn
+    padding: 0 0 10px 30px
+    font-size: 15px
+    font-weight: 700
+    transition: color 1s, text-shadow 1s
+
+    &:hover
+      color: $yellow
+      text-shadow: 1px 1px 1px black
+
+  &__fa
+    font-size: 18px
+    padding: 0 5px
+    color: black
+
+    .gallery__btn:hover &
+      color: red
+
+  &__dots
+    font-size: 0
+    display: flex
+    justify-content: center
+
+    & button
+      background: transparent
+      border: 2px solid black
+      border-radius: 50%
+      margin: 0 3px
+      font-size: 0
+      width: 20px
+      height: 20px
+      transition: background 0.3s
+
+.slick-active button
+  background: black
+
+
+

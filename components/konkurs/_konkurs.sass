@@ -1,0 +1,45 @@
+.konkurs
+  padding: 50px 0 35px
+  text-align: center
+
+  &__title
+    font-weight: 700
+    font-size: 35px
+    position: relative
+    padding: 5px 0
+    margin-bottom: 10px
+    display: inline-block
+
+    &.-small
+      font-size: 31px
+
+    &:after
+      content: ''
+      position: absolute
+      bottom: 0
+      left: 0
+      width: 50%
+      border-bottom: 4px solid $yellow
+
+  &__text
+    font-size: 15px
+    padding: 20px 0
+    font-weight: 700
+
+  &__box
+    display: flex
+    justify-content: center
+    text-align: left
+
+  &__item
+    padding: 15px
+    width: 33.33%
+    transition: opacity 1s
+
+    &:hover
+      opacity: 0.5
+
+  &__img
+    width: 100%
+    height: auto
+    margin-bottom: 15px

@@ -1,0 +1,41 @@
+.more
+  +clearfix
+  padding: 15px 0
+
+  &__box
+    width: 66.66%
+    float: left
+
+    &.-small
+      width: 33.33%
+      float: left
+
+  &__img
+    width: 100%
+    height: auto
+    +clearfix
+
+  &__title
+    padding: 0 0 10px 30px
+
+  &__text
+    padding: 25px 0 20px 30px
+    font-size: 15px
+
+  &__btn
+    padding: 0 0 10px 30px
+    font-size: 15px
+    font-weight: 700
+    transition: color 1s, text-shadow 1s
+
+    &:hover
+      color: $yellow
+      text-shadow: 1px 1px 1px black
+
+  &__fa
+    font-size: 18px
+    padding: 0 5px
+    color: black
+
+    .more__btn:hover &
+      color: red
