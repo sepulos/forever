@@ -5,20 +5,15 @@
   color: white
   width: 100%
   position: relative
-  +PHONE_ONLY
-    height: 60px
 
   &__nav
     +PHONE_ONLY
-      padding-top: 70px
       display: none
-      position: absolute
       background: black
+      +clearfix
       font-size: 16px
       width: 100%
-      z-index: 0
-      top: 0
-      left: 0
+      z-index: 5
 
   &__navLeft
     display: flex
@@ -58,7 +53,7 @@
     display: block
     width: 310px
     float: left
-    z-index: 4
+    z-index: 6
     +flex
     +TAB_ONLY_880
       width: 250px
@@ -66,9 +61,7 @@
     +PHONE_ONLY
       width: 200px
       padding: 10px
-      position: absolute
-      top: 0
-      left: 0
+      position: relative
 
   &__bars
     position: absolute
@@ -79,4 +72,7 @@
     padding: 0 10px
     display: none
     cursor: pointer
-    z-index: 2
+    z-index: 6
+    +PHONE_ONLY
+      position: relative
+      float: right

@@ -1,6 +1,7 @@
 .info
   +clearfix
   margin: 20px 0
+  display: flex
 
   &__box
     box-sizing: border-box
@@ -8,6 +9,8 @@
     float: left
     +clearfix
     padding: 20px
+    +PHONE_ONLY_600
+      width: 100%
 
   &__img
     width: 100%

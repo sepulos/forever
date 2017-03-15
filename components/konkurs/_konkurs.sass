@@ -30,11 +30,16 @@
     display: flex
     justify-content: center
     text-align: left
+    +PHONE_ONLY_600
+      display: block
 
   &__item
     padding: 15px
     width: 33.33%
     transition: opacity 1s
+    +PHONE_ONLY_600
+      width: 100%
+      padding: 0
 
     &:hover
       opacity: 0.5
@@ -43,3 +48,4 @@
     width: 100%
     height: auto
     margin-bottom: 15px
+    +clearfix

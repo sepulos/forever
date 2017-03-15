@@ -1,14 +1,20 @@
 .map
   +clearfix
   margin-bottom: -6px
+  text-align: center
 
   &__box
     width: 66.66%
     float: left
+    +PHONE_ONLY
+      width: 100%
 
     &.-small
       width: 33.33%
       position: relative
+      +PHONE_ONLY
+        width: 50%
+        padding: 0 25%
 
   &__item
     +clearfix
@@ -24,6 +30,7 @@
     left: 0
     width: 100%
     height: calc(100% - 21px)
+    +clearfix
 
   &__black
     margin-top: -21px
@@ -32,10 +39,25 @@
     width: 100%
     text-align: center
     font-size: 33px
+    +LAPTOP_MAX
+      font-size: 26px
+      padding: 4px
+      margin-top: -22px
+    +TAB_MAX
+      padding: 2px
+    +TAB_ONLY_880
+      font-size: 24px
+      padding: 2px
+    +PHONE_ONLY
+      font-size: 20px
+      padding: 4.5px
+    +PHONE_ONLY_600
+      font-size: 16px
 
   &__img
     width: 100%
     height: auto
+    +clearfix
 
   &__hover
     position: absolute

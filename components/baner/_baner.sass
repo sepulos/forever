@@ -16,11 +16,21 @@
     position: absolute
     bottom: 150px
     left: 115px
-    transform: translateX(-50%)
     +clearfix
     text-align: left
     color: black
-
+    +LAPTOP_MAX
+      bottom: 60px
+      left: 60px
+    +TAB_ONLY_880
+      bottom: 40px
+      left: 30px
+    +PHONE_ONLY_600
+      position: relative
+      display: block
+      bottom: 0
+      left: 0
+      text-align: center
 
   &__yellow
     font-size: 40px
@@ -28,11 +38,23 @@
     background: $yellow
     display: inline-block
     +clearfix
+    +TAB_ONLY_880
+      font-size: 26px
+    +PHONE_ONLY_600
+      display: inline-block
+      width: 100%
+
 
   &__text
     font-size: 40px
     font-weight: 700
     padding: 15px 0 50px 0
+    +TAB_ONLY_880
+      font-size: 26px
+      padding: 15px 0 20px 0
+    +PHONE_ONLY_600
+      display: inline-block
+      width: 100%
 
   &__btn
     padding: 10px 30px
@@ -45,8 +67,12 @@
     outline-offset: 0
     text-shadow: none
     transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1)
+    +TAB_ONLY_880
+      font-size: 16px
+      padding: 5px 15px
     +PHONE_ONLY_600
-      border: 3px ridge white
+      display: inline-block
+
 
     &:hover
       border: 3px solid
