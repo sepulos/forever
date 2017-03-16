@@ -1217,8 +1217,8 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 .baner__yellow {
   font-size: 40px;
   padding: 0 10px 0 2px;
-  background: #fce300;
-  display: inline-block;
+  display: none;
+  transition: background 3s;
 }
 
 .baner__yellow:before, .baner__yellow:after {
@@ -1247,6 +1247,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   font-size: 40px;
   font-weight: 700;
   padding: 15px 0 50px 0;
+  display: none;
 }
 
 @media (max-width: 880px) {
@@ -1274,6 +1275,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   outline-offset: 0;
   text-shadow: none;
   transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+  display: none;
 }
 
 @media (max-width: 880px) {
@@ -1469,7 +1471,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .form {
-  padding: 70px 0 50px;
+  padding: 100px 0 50px;
 }
 
 .form:before, .form:after {
@@ -1483,8 +1485,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
 .form__yellow {
   font-size: 20px;
-  background: #fce300;
+  background: white;
+  color: white;
   padding: 30px;
+  transition: background 4s, color 5s;
 }
 
 .form__box {
@@ -1605,6 +1609,8 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   font-weight: 700;
   padding: 10px 0;
   position: relative;
+  color: #fce300;
+  transition: color 3s;
 }
 
 .yellow__text:after {
